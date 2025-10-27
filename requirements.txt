@@ -1,13 +1,9 @@
-# requirements.txt (VERSIÓN CORREGIDA)
+# requirements.txt para Railway
 flask==3.0.3
 opencv-python-headless==4.10.0.84
 ultralytics==8.3.0
 requests==2.32.3
 numpy==1.26.4
 gunicorn==23.0.0
-pillow==11.0.0
-
-# PyTorch CPU-only (más ligero para Render Free Tier)
---index-url https://download.pytorch.org/whl/cpu
 torch==2.5.0
 torchvision==0.20.0
