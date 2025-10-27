@@ -1,13 +1,11 @@
 services:
   - type: web
-    name: esp32-cam-detection
+    name: esp32-cam-endpoint
     env: python
-    region: oregon  # o 'frankfurt' si estás en Europa
+    region: oregon
     plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn app:app"
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.10.12
       - key: PORT
         value: 10000
