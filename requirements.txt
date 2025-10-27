@@ -1,8 +1,13 @@
-flask==3.0.0
-opencv-python-headless==4.8.1.78
-ultralytics==8.1.0
-requests==2.31.0
-numpy==1.26.2
-gunicorn==21.2.0
-torch==2.1.0
-torchvision==0.16.0
+# requirements.txt (VERSIÓN CORREGIDA)
+flask==3.0.3
+opencv-python-headless==4.10.0.84
+ultralytics==8.3.0
+requests==2.32.3
+numpy==1.26.4
+gunicorn==23.0.0
+pillow==11.0.0
+
+# PyTorch CPU-only (más ligero para Render Free Tier)
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.5.0
+torchvision==0.20.0
